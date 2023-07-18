@@ -7,12 +7,19 @@ import { Ingredient } from '../models/ingredient.model';
 })
 export class RecipeService {
   private recipes: Array<Recipe> = [
-    new Recipe('1', 'Chili Corn Carne', '', [
-      new Ingredient('Nötfärs', '500 g'),
-      new Ingredient('Ris', '3 dl'),
-      new Ingredient('Krossade Tomater', '1 packet'),
-      new Ingredient('Salt & Peppar', 'Generöst'),
-    ]),
+    new Recipe(
+      '1',
+      'Chili Corn Carne',
+      '',
+      [
+        new Ingredient('Nötfärs', '500 g'),
+        new Ingredient('Ris', '3 dl'),
+        new Ingredient('Krossade Tomater', '1 packet'),
+        new Ingredient('Salt & Peppar', 'Generöst'),
+      ],
+      'Grymt för en tidig höstkväll.',
+      'just do it 4Head'
+    ),
   ];
 
   getRecipes() {

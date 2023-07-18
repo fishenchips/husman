@@ -5,6 +5,8 @@ export class Recipe {
     public id: string,
     public name: string,
     public image: string,
-    public ingredients: Array<Ingredient>
+    public ingredients: Array<Ingredient>,
+    public introduction: string,
+    public preparation: string
   ) {}
 }
