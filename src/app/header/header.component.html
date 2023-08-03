@@ -12,4 +12,10 @@
       </li>
     </ul>
   </div>
+  <form [formGroup]="testForm" (ngSubmit)="onSubmit()">
+    <textarea formControlName="text"></textarea>
+    <input type="text" formControlName="number" #val />
+    <button type="submit">click</button>
+  </form>
+  <p>{{ val.value }}</p>
 </nav>
